@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#eef7f4">
+<meta name="description" content="Студия взгляда Елены Павленко — персональный подбор наращивания ресниц и оформления бровей за 1–2 минуты.">
+<title>Студия взгляда Елены Павленко — персональный подбор</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Фоновые декоративные слои -->
+<div class="bg-gradient" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+
+<!-- Верхняя панель -->
+<header class="topbar" id="topbar" hidden>
+  <button class="topbar__btn" id="btnBack" aria-label="Назад">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <div class="topbar__brand">
+    <span class="topbar__mono">EP</span>
+    <span class="topbar__name">Студия взгляда</span>
+  </div>
+  <button class="topbar__btn topbar__btn--restart" id="btnRestart" aria-label="Начать заново">
+    <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+  </button>
+</header>
+
+<!-- Прогресс -->
+<div class="progress" id="progressWrap" hidden>
+  <div class="progress__track"><div class="progress__fill" id="progressFill"></div></div>
+  <div class="progress__label" id="progressLabel"></div>
+</div>
+
+<!-- Приложение -->
+<main id="app" class="app"></main>
+
+<!-- Тост -->
+<div class="toast" id="toast" role="status"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
